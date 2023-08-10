@@ -1,0 +1,402 @@
+@font-face{
+    font-family: 'bigshot';
+    src: url(../assets/fuentes/BigshotOne-Regular.ttf);
+}
+
+*{
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+}
+/***** boxmodeling y Grids para el encabezado *****/
+.encabezado{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #000000;
+    border-bottom: 3px solid rgb(164, 115, 25);
+}
+.encabezado{
+    display:grid;
+    grid-template-columns: 2,1fr;
+    grid-template-rows: 3,1fr;
+
+    grid-template-areas:
+    "izq arr der"
+    "izq aba der"
+    ;
+}
+.imagen02{
+    width: 400px;
+    height: 300px;
+}
+
+.imagen01{
+    width: 400px;
+    height: 300px;
+}
+.flex3{
+    grid-area: izq;
+}
+.flex4{
+    grid-area: der;
+    display: flex;
+    justify-content: end;
+}
+
+
+    /***** Estilo y flex en Titulo *****/
+.flex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.Titulo{
+    font-size: 100px;
+    font-family: 'bigshot';
+    color: rgb(0, 0, 0);
+    letter-spacing: 20px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(164, 115, 25);
+    border-bottom: 3px solid rgb(164, 115, 25);
+    border-radius: 40px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 0px;
+    margin-right: 25px;
+}
+
+    /***** Estilos, flex y grids para el navbar *****/
+.navbar01{
+    grid-area: aba;
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-family: 'bigshot';
+}
+.inicio1{
+    letter-spacing: 6px;
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.ofertas1{
+    letter-spacing: 3px;
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 6px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.cervezas1{
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 8px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.nosotros1{
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 8px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.contactos1{
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 8px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+/***** Pseudoclases para el navbar *****/
+a:hover{
+    color: rgb(164, 115, 25);
+    border-bottom: #000000;
+    border-left: 2px solid rgb(164, 115, 25);
+    border-right: 2px solid rgb(164, 115, 25);
+}
+a:active{
+    color: red;
+    border-bottom: #000000;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+
+/***** Estilos y display para elementos de Main *****/
+.principal1{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.principal1{
+    background-image: url(../assets/Fondo\ de\ Cervezas-fotor-202307310556.png);
+}
+.principal1{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: white;
+}
+.nuevo01{
+    background-color: #00000079;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 50px;
+    border: 1px solid rgb(164, 115, 25);
+}
+.nuevotext01{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 60px;
+    font-family: "bigshot";
+}
+.video01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.vid-tam{
+    width: 1020px;
+    height: 580px;
+}
+.c1{
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+/***** estilo para elementos en footers *****/
+.footer{
+    background: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.texto-3{
+    font-size: 20px;
+    font-family: 'bigshot';
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/***** media queries *****/
+@media screen and (max-width: 480px){
+    *{
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+    }
+/***** boxmodeling y Grids para el encabezado (RESPONSIVE) *****/
+    .encabezado{
+    width: 480px;
+    height: 410px;
+    margin: 0%;
+    padding: 0%;
+    background-color: #000000;
+    border-bottom: 2px solid (164, 115, 25);
+/***** boxmodeling y Grids para el encabezado *****/
+
+}
+.encabezado{
+    display:grid;
+    grid-template-columns: 2,1fr;
+    grid-template-rows: 3,1fr;
+
+    grid-template-areas:
+    "arr arr"
+    "mid mid"
+    "aba aba"
+    ;
+}
+.imagen01{
+    width: 350px;
+    height: 280px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.flex3{
+grid-area: mid;
+
+}
+.flex4{
+    width: 0px;
+    height: 0px;
+}
+.imagen02{
+    width: 1px;
+    height: 1px;
+    padding: 0px;
+}
+
+    /***** Estilo y flex en Titulo (RESPONSIVE) *****/
+.flex1{
+    grid-area: arr;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.Titulo{
+    font-size: 35px;
+    font-family: 'bigshot';
+    color: rgb(0, 0, 0);
+    letter-spacing: 20px;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgb(164, 115, 25);
+    border-bottom: 3px solid rgb(164, 115, 25);
+    border-radius: 40px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    margin-bottom: 0px;
+    margin: 10px;
+}
+    /***** Estilos, flex y grids para el navbar (RESPONSIVE) *****/
+.navbar01{
+    grid-area: aba;
+}
+.flex2{
+    grid-area: aba;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-family: 'bigshot';
+}
+.inicio1{
+    letter-spacing: 4px;
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.ofertas1{
+    letter-spacing: 2px;
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 6px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.cervezas1{
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 8px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.nosotros1{
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 8px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+.contactos1{
+    border-bottom: 2px solid white;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 8px;
+    border-radius: 15px;
+    text-decoration-line: none;
+    color: white;
+}
+/***** Pseudoclases para el navbar (RESPONSIVE) *****/
+a:active{
+    color: red;
+    border-bottom: #000000;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+/***** Estilos y display para elementos de Main (RESPONSIVE) *****/
+.principal1{
+    width: 480px;
+    height: 400px;
+    margin: 0%;
+    padding: 0%;
+}
+.principal1{
+    background-image: url(../assets/Fondo\ de\ Cervezas-fotor-202307310556.png);
+}
+.principal1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+.nuevo01{
+    background-color: #00000079;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid rgb(164, 115, 25);
+}
+.nuevotext01{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    font-family: "bigshot";
+}
+.video01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.c1{
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.vid-tam{
+    width: 370px;
+    height: 200px;
+}
+/***** estilo para elementos en footers (RESPONSIVE) *****/
+.footer{
+    width: 480px;
+    background: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.texto-3{
+    font-size: 10px;
+    font-family: 'bigshot';
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+}
